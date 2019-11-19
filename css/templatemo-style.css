@@ -339,8 +339,8 @@ h3.about-title {
     }
 /* end about */
 
-/* start portfolio */
-#portfolio
+/* start Contents */
+#Contents
     {
         background: #fff;
         border-top: 1px solid #eeeeee;
@@ -348,13 +348,13 @@ h3.about-title {
         padding-top: 80px;
         padding-bottom: 80px;
     }
-#portfolio .portfolio-thumb
+#Contents .portfolio-thumb
     {
         overflow: hidden;
         margin: 0;
         position: relative;
     }
-#portfolio .portfolio-thumb .portfolio-overlay
+#Contents .portfolio-thumb .portfolio-overlay
     {
         background: #333;
         color: #ffffff;
@@ -378,11 +378,11 @@ h3.about-title {
         opacity: 0;
         transition: all 0.4s ease-in-out;
     }
-#portfolio .portfolio-thumb:hover .portfolio-overlay
+#Contents .portfolio-thumb:hover .portfolio-overlay
     {
         opacity: 0.9;
     }
-#portfolio .portfolio-thumb .portfolio-overlay .fa
+#Contents .portfolio-thumb .portfolio-overlay .fa
     {
         border: 1px solid #ffffff;
         border-radius: 50%;
@@ -396,11 +396,11 @@ h3.about-title {
         margin-bottom: 10px;
         transition: all 0.3s ease;
     }
-#portfolio .portfolio-thumb .portfolio-overlay .fa:hover {
+#Contents .portfolio-thumb .portfolio-overlay .fa:hover {
     background: #55acee;
     border-color: #55acee;
 }
-#portfolio .portfolio-thumb .portfolio-overlay h4
+#Contents .portfolio-thumb .portfolio-overlay h4
     {
         padding-bottom: 10px;
     }
