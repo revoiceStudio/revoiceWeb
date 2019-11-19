@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="utf-8">
 	<title>REVOICE STUDIO</title>
@@ -7,19 +8,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-    <!-- 
+	<!-- 
 	Workforce CSS Template
 	https://templatemo.com/tm-461-workforce
     -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">		
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/templatemo-style.css">
 </head>
+
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 	<div class="preloader">
-		<div class="sk-spinner sk-spinner-rotating-plane"></div>
+		<div class="spinner">
+				<div class="rect1"></div>
+				<div class="rect2"></div>
+				<div class="rect3"></div>
+				<div class="rect4"></div>
+				<div class="rect5"></div>
+				<div class="rect6"></div>
+		</div>
 	</div>
 	<nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
 		<div class="container">
@@ -35,9 +44,21 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#home" class="smoothScroll">Home</a></li>
 					<li><a href="#service" class="smoothScroll">Voice Service</a></li>
-					<li><a href="#about" class="smoothScroll">Contents</a></li>
-					<li><a href="#Contents" class="smoothScroll">News</a></li>
-					<li><a href="#contact" class="smoothScroll">Contact</a></li>
+					<li><a href="#Contents" class="smoothScroll">Contents</a></li>
+					<li><a href="#about" class="smoothScroll">News</a></li>
+					<li><a href="#contact" class="smoothScroll">contact</a></li>
+					
+					<li>
+						<a href="" class="dropdown " id="dropdownlabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+							REV.GG<span class="caret"></span> <!--화살표표시 Span-->
+						</a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Today Quiz</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">LastBread</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Link</a></li>
+						</ul>
+					</li>
+
 				</ul>
 			</div>
 		</div>
@@ -58,7 +79,8 @@
 									<span class="wow fadeIn" data-wow-delay="0.6s">Contents development,</span>
 									<span class="wow fadeIn" data-wow-delay="0.9s">Management</span>
 								</h2>
-								<a href="#portfolio" class="smoothScroll templatemo-slider-btn btn btn-default">Learn More</a>
+								<a href="#portfolio" class="smoothScroll templatemo-slider-btn btn btn-default">Learn
+									More</a>
 							</div>
 						</div>
 					</li>
@@ -66,10 +88,11 @@
 						<img src="images/slider/2.jpg" alt="Slide 2">
 						<div class="slider-caption">
 							<div class="templatemo_homewrapper">
-                            	<h2>Representation service</h2>
+								<h2>Representation service</h2>
 								<h1>skyti play</h1>
 								<h3>: 항공권 음성 조회 서비스</h3>
-								<a href="#about" class="smoothScroll templatemo-slider-btn btn btn-default">Meet Our Team</a>	
+								<a href="#about" class="smoothScroll templatemo-slider-btn btn btn-default">Meet Our
+									Team</a>
 							</div>
 						</div>
 					</li>
@@ -105,7 +128,9 @@
 						</div>
 						<div class="media-body">
 							<h3 class="media-heading">VUX Design</h3>
-							<p>리보이스의 음성 서비스는 대화형 인터페이스의 특성에 맞는 VUX 디자인을 통해 문제를 해결하고 새로운 경험 및 서비스의 품질을 극대화합니다.<a rel="nofollow noopener" href="https://pixabay.com">Pixabay</a> for images used in this template.</p>
+							<p>리보이스의 음성 서비스는 대화형 인터페이스의 특성에 맞는 VUX 디자인을 통해 문제를 해결하고 새로운 경험 및 서비스의 품질을 극대화합니다.<a
+									rel="nofollow noopener" href="https://pixabay.com">Pixabay</a> for images used in
+								this template.</p>
 						</div>
 					</div>
 				</div>
@@ -116,7 +141,8 @@
 						</div>
 						<div class="media-body">
 							<h3 class="media-heading">Developement</h3>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+								tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
 						</div>
 					</div>
 				</div>
@@ -127,7 +153,8 @@
 						</div>
 						<div class="media-body">
 							<h3 class="media-heading">Pubulish// Coding HTML5 &amp; CSS3</h3>
-							<p>This is a CSS layout with Bootstrap v3.3.4 kit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+							<p>This is a CSS layout with Bootstrap v3.3.4 kit. Lorem ipsum dolor sit amet, consectetuer
+								adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
 						</div>
 					</div>
 				</div>
@@ -180,8 +207,9 @@
 												<a href="#" class="fa fa-search"></a>
 												<a href="contents/skyti.html" class="fa fa-link"></a>
 												<h4>Project title</h4>
-												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>	
-											</div>											
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+													nonumm.</p>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -193,7 +221,8 @@
 												<a href="#" class="fa fa-search"></a>
 												<a href="#" class="fa fa-link"></a>
 												<h4>Project title</h4>
-												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+													nonumm.</p>
 											</div>
 										</div>
 									</div>
@@ -206,7 +235,8 @@
 												<a href="#" class="fa fa-search"></a>
 												<a href="#" class="fa fa-link"></a>
 												<h4>Project title</h4>
-												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+													nonumm.</p>
 											</div>
 										</div>
 									</div>
@@ -219,7 +249,8 @@
 												<a href="#" class="fa fa-search"></a>
 												<a href="#" class="fa fa-link"></a>
 												<h4>Project title</h4>
-												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+													nonumm.</p>
 											</div>
 										</div>
 									</div>
@@ -232,7 +263,8 @@
 												<a href="#" class="fa fa-search"></a>
 												<a href="#" class="fa fa-link"></a>
 												<h4>Project title</h4>
-												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+													nonumm.</p>
 											</div>
 										</div>
 									</div>
@@ -245,7 +277,8 @@
 												<a href="#" class="fa fa-search"></a>
 												<a href="#" class="fa fa-link"></a>
 												<h4>Project title</h4>
-												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+													nonumm.</p>
 											</div>
 										</div>
 									</div>
@@ -271,21 +304,28 @@
 			<div class="row">
 				<div class="col-md-6 col-sm-6 wow fadeInLeft templatemo-about-left" data-wow-delay="0.3s">
 					<h3 class="about-title">Studio History</h3>
-					<p>Phasellus tempus malesuada congue. Sed id est tincidunt, iaculis nulla vel, sodales metus. Morbi interdum accumsan augue, in accumsan neque lacinia sed. Fusce cursus eu ligula ut gravida. Ut tristique hendrerit bibendum. Suspendisse euismod sit amet quam et luctus.</p>
-                    <p>Nulla viverra diam sed justo vehicula, non venenatis massa gravida. Nunc efficitur et quam non tempor. Nullam nec nisl eget est ultrices elementum nec vel nisl. Cras vestibulum nisl vel justo tempor, ut lacinia est accumsan.</p>
+					<p>Phasellus tempus malesuada congue. Sed id est tincidunt, iaculis nulla vel, sodales metus. Morbi
+						interdum accumsan augue, in accumsan neque lacinia sed. Fusce cursus eu ligula ut gravida. Ut
+						tristique hendrerit bibendum. Suspendisse euismod sit amet quam et luctus.</p>
+					<p>Nulla viverra diam sed justo vehicula, non venenatis massa gravida. Nunc efficitur et quam non
+						tempor. Nullam nec nisl eget est ultrices elementum nec vel nisl. Cras vestibulum nisl vel justo
+						tempor, ut lacinia est accumsan.</p>
 				</div>
 				<div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.3s">
 					<span class="text-uppercase">BOOTSTRAP 100%</span>
 					<div class="progress">
-						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60"
+							aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
 					</div>
 					<span class="text-uppercase">HTML5 &AMP; CSS3 90%</span>
 					<div class="progress">
-						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90"
+							aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
 					</div>
 					<span class="text-uppercase">Wordpress 65%</span>
 					<div class="progress">
-						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="65"
+							aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
 					</div>
 				</div>
 			</div>
@@ -324,7 +364,7 @@
 						<h2 class="wow bounceIn">Contact</h2>
 						<hr>
 						<h4>Talk to us for more assistance...</h4>
-					</div>					
+					</div>
 					<form action="#" method="post" role="form">
 						<div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
 							<input type="text" placeholder="Name" class="form-control">
@@ -356,8 +396,9 @@
 						<li><a href="#" class="fa fa-twitter"></a></li>
 						<li><a href="#" class="fa fa-instagram"></a></li>
 					</ul>
-					<p class="wow bounceIn">Copyright &copy; 2018 <span>Workforce</span> Studio 
-                    . Design: <a rel="nofollow noopener" href="https://templatemo.com"><span>templatemo</span></a></p>
+					<p class="wow bounceIn">Copyright &copy; 2018 <span>Workforce</span> Studio
+						. Design: <a rel="nofollow noopener" href="https://templatemo.com"><span>templatemo</span></a>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -371,4 +412,5 @@
 	<script src="js/wow.min.js"></script>
 	<script src="js/custom.js"></script>
 </body>
+
 </html>
