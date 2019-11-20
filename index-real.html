@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>REVOICE STUDIO</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
@@ -12,7 +12,7 @@
 	Workforce CSS Template
 	https://templatemo.com/tm-461-workforce
     -->
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -22,12 +22,12 @@
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 	<div class="preloader">
 		<div class="spinner">
-				<div class="rect1"></div>
-				<div class="rect2"></div>
-				<div class="rect3"></div>
-				<div class="rect4"></div>
-				<div class="rect5"></div>
-				<div class="rect6"></div>
+			<div class="rect1"></div>
+			<div class="rect2"></div>
+			<div class="rect3"></div>
+			<div class="rect4"></div>
+			<div class="rect5"></div>
+			<div class="rect6"></div>
 		</div>
 	</div>
 	<nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
@@ -47,11 +47,13 @@
 					<li><a href="#Contents" class="smoothScroll">컨텐츠</a></li>
 					<li><a href="#about" class="smoothScroll">리보이스</a></li>
 					<li><a href="#contact" class="smoothScroll">문의사항</a></li>
-				
-					
+
+
 					<li>
-						<a href="" class="dropdown " id="dropdownlabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-							사이트<span class="caret"></span> <!--화살표표시 Span-->
+						<a href="" class="dropdown " id="dropdownlabel" data-target="#" data-toggle="dropdown"
+							aria-haspopup="true" role="button" aria-expanded="false">
+							사이트<span class="caret"></span>
+							<!--화살표표시 Span-->
 						</a>
 						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">블로그</a></li>
@@ -59,8 +61,10 @@
 						</ul>
 					</li>
 					<li>
-						<a href="" class="dropdown " id="dropdownlabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-							REV.GG<span class="caret"></span> <!--화살표표시 Span-->
+						<a href="" class="dropdown " id="dropdownlabel" data-target="#" data-toggle="dropdown"
+							aria-haspopup="true" role="button" aria-expanded="false">
+							REV.GG<span class="caret"></span>
+							<!--화살표표시 Span-->
 						</a>
 						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">오늘의 퀴즈</a></li>
@@ -373,18 +377,22 @@
 						<hr>
 						<h4>Talk to us for more assistance...</h4>
 					</div>
-					<form action="#" method="post" role="form">
+					<form id="sendMail" action="/sendMail" role="form" onsubmit="return isValidSubmit()">
 						<div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
-							<input type="text" placeholder="Name" class="form-control">
+							<input type="text" autocomplete="off" placeholder="Name" class="form-control" id="name"
+								required="required">
 						</div>
 						<div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
-							<input type="email" placeholder="Email" class="form-control">
+							<input type="email" autocomplete="off" placeholder="Email" class="form-control" id="email"
+								required="required">
 						</div>
 						<div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
-							<input type="text" placeholder="Subject" class="form-control">
+							<input type="text" autocomplete="off" placeholder="Subject" class="form-control"
+								id="subject" required="required">
 						</div>
 						<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.9s">
-							<textarea class="form-control" rows="5" placeholder="Message"></textarea>
+							<textarea autocomplete="off" class="form-control" rows="5" placeholder="Message"
+								id="message" required="required"></textarea>
 						</div>
 						<div class="col-md-offset-3 col-sm-offset-3 col-sm-6 col-md-6 wow fadeIn" data-wow-delay="0.3s">
 							<input type="submit" value="Send Message" class="form-control">
@@ -405,14 +413,15 @@
 						<li><a href="#" class="fa fa-instagram"></a></li>
 					</ul>
 
-					<p class="wow bounceIn">사업자 등록번호 : 788-65-00244 ( 대표  : 한진섭 )
+					<p class="wow bounceIn">사업자 등록번호 : 788-65-00244 ( 대표 : 한진섭 )
 						<br>서울특별시 중구 삼일대로358(신한L타워), 9F SKT인큐베이팅 Lab6
 						<br>info@revoice.kr | 010-6426-8105
 					</p>
 
 					<p class="wow bounceIn">
-						
-						문의&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow noopener" href="https://templatemo.com"><span>templatemo</span></a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<strong>개인정보처리방침</strong>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;채용&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;피드백
+
+						문의&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow noopener"
+							href="https://templatemo.com"><span>templatemo</span></a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<strong>개인정보처리방침</strong>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;채용&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;피드백
 					</p>
 
 					<p class="wow bounceIn">&copy;Copyright by <span>REVOICE</span> Crop
@@ -430,6 +439,64 @@
 	<script src="js/smoothscroll.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script>
+		/**
+		 * 중복서브밋 방지
+		 * 
+		 * @returns {Boolean}
+		 */
+		var doubleSubmitFlag = false;
+		function doubleSubmitCheck() {
+			if (doubleSubmitFlag) {
+				return doubleSubmitFlag;
+			} else {
+				doubleSubmitFlag = true;
+				return false;
+			}
+		}
+		function isValidSubmit(){
+			if(doubleSubmitCheck()) return 0
+			else return 1
+		}
+		$("#sendMail").submit(function (event) {
+			event.preventDefault();
+			const url = $(this).attr("action");
+			const name = $("#name").val()
+			const email = $("#email").val()
+			const subject = $("#subject").val()
+			const message = $("#message").val()
+			console.log(url, name, email, subject, message)
+			const confirmState = confirm("메일을 전송하시겠어요?")
+			if(confirmState==true){
+				$.ajax({
+					url: url,
+					dataType: 'text',
+					type: 'POST',
+					data: {
+						'name': name,
+						'email': email,
+						'subject': subject,
+						'message': message
+					},
+					success: (data) => {
+						console.log("send mail success")
+						alert("메일 전송이 완료되었습니다.")
+						$("#name").val('')
+						$("#email").val('')
+						$("#subject").val('')
+						$("#message").val('')
+					},
+					error: (err) => {
+						console.log("send mail err")
+						alert("메일 전송이 실패했습니다.")
+					},
+					complete: () => {
+						console.log("mail complete")
+					}
+				})
+			}
+		});
+	</script>
 </body>
 
 </html>
