@@ -1,4 +1,43 @@
 
+
+//counter start
+
+var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
+
+//counter end (how to ues :		<div id="counter">  <h1 class="counter-value" data-count="348">0</h1> </div>    )
+
+
 // preloader
 $(window).load(function(){
     $('.preloader').fadeOut(1000); // set duration in brackets    

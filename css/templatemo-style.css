@@ -5,6 +5,9 @@ Workforce CSS Template
 https://templatemo.com/tm-461-workforce
 
 */
+/*counter strat*/
+
+/*counter end*/
 
 body
     {
@@ -398,6 +401,7 @@ h3.about-title {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+
 #about .progress
     {
         background: #f9f9f9;
@@ -408,6 +412,7 @@ h3.about-title {
     {
         background: #55acee;
     }
+    
 #about span
     {
         display: block;
@@ -416,23 +421,36 @@ h3.about-title {
     }
 #about .about-wrapper
     {
-        background: #ffffff;
-        box-shadow: 0px 8px 2px 2px rgba(50,50,50, 0.08);
-        margin-top: 60px;
-        margin-bottom: 20px;
         max-width: 500px;
-        padding: 20px;
+        padding: 50px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
-#about .about-wrapper h3
+#about .counter
+    {
+        text-align: center;
+    }
+#about .counter span
+    {
+        font-size: 20px;
+    }
+    
+    
+#about .counter h1
     {
         color: #55acee;
-        font-size: 20px;
-        font-weight: bold;        
+        font-size: 50px;
+        font-weight: bold;   
     }
+#about .counter-value
+    {
+        display: inline;
+    }
+
 /* end about */
 
-/* start Contents */
-#Contents
+/* start portfolio */
+#portfolio
     {
         background: #fff;
         border-top: 1px solid #eeeeee;
@@ -440,13 +458,13 @@ h3.about-title {
         padding-top: 80px;
         padding-bottom: 80px;
     }
-#Contents .portfolio-thumb
+#portfolio .portfolio-thumb
     {
         overflow: hidden;
         margin: 0;
         position: relative;
     }
-#Contents .portfolio-thumb .portfolio-overlay
+#portfolio .portfolio-thumb .portfolio-overlay
     {
         background: #333;
         color: #ffffff;
@@ -470,11 +488,11 @@ h3.about-title {
         opacity: 0;
         transition: all 0.4s ease-in-out;
     }
-#Contents .portfolio-thumb:hover .portfolio-overlay
+#portfolio .portfolio-thumb:hover .portfolio-overlay
     {
         opacity: 0.9;
     }
-#Contents .portfolio-thumb .portfolio-overlay .fa
+#portfolio .portfolio-thumb .portfolio-overlay .fa
     {
         border: 1px solid #ffffff;
         border-radius: 50%;
@@ -488,11 +506,11 @@ h3.about-title {
         margin-bottom: 10px;
         transition: all 0.3s ease;
     }
-#Contents .portfolio-thumb .portfolio-overlay .fa:hover {
+#portfolio .portfolio-thumb .portfolio-overlay .fa:hover {
     background: #55acee;
     border-color: #55acee;
 }
-#Contents .portfolio-thumb .portfolio-overlay h4
+#portfolio .portfolio-thumb .portfolio-overlay h4
     {
         padding-bottom: 10px;
     }
