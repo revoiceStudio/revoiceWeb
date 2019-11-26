@@ -363,8 +363,8 @@ h4
 #service .media .fa
     {
         color: #55acee;
-        font-size: 60px;
-        margin-right: 20px;
+        font-size: 70px;
+        margin-right: 30px;
         width: 65px;
         height: 65px;
     }
@@ -429,6 +429,7 @@ h3.about-title {
 #about .counter
     {
         text-align: center;
+        margin-top: 20px;
     }
 #about .counter span
     {
@@ -446,6 +447,19 @@ h3.about-title {
     {
         display: inline;
     }
+
+
+#about .fa
+    {
+        color: #55acee;
+        font-size: 180px;
+    } 
+
+#about .fas
+    {
+        color: #55acee;
+        font-size: 180px;
+    } 
 
 /* end about */
 
