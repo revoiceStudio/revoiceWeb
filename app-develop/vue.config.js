@@ -1,6 +1,7 @@
 module.exports = {
   publicPath: '',
   outputDir: '../app',
+  indexPath: 'dashboard.html',
   devServer: {
     proxy: {
       '/todayQuiz': {

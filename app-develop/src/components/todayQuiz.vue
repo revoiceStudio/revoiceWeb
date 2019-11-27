@@ -1,10 +1,14 @@
 <template>
 <div class="limiter">  
-		<div class="container-table100">
+		<div class="container-table100">         
 			<div class="wrap-table100">
+        <h1>오늘의 퀴즈 시즌1 랭킹</h1>   
 				<div class="table">
 
 					<div class="row header">
+            <div id="ranking" class="cell">
+              랭킹
+            </div>
 						<div class="cell">
 							닉네임
 						</div>
@@ -19,7 +23,10 @@
 						</div>
 					</div>
 					
-          <div class="row" v-bind:key="value" v-for="(value) in users">
+          <div class="row" v-bind:key="value" v-for="(value, index) in users" v-if="index < 20">
+            <div id="ranking" class="cell" data-title="Ranking">
+              {{ index + 1}}
+            </div>
             <div class="cell" data-title="Full Name">
               {{ value.name }}
             </div>
@@ -75,18 +82,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  #ranking{
+    width: 100px;
+  }
+  h1{
+    margin-bottom : 25px;
+    font-weigth: bold;
+  }  
 </style>
