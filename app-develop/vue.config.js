@@ -1,23 +1,23 @@
 module.exports = {
-  publicPath: '',
-  outputDir: '../app',
-  indexPath: 'dashboard.html',
+  publicPath: "",
+  outputDir: "../app",
+  indexPath: "dashboard.html",
   devServer: {
     proxy: {
-      '/todayQuiz': {
-        target: 'http://15.164.93.96:5000/todayQuiz',
+      "/todayQuiz": {
+        target: "http://13.209.69.224:5000/todayQuiz",
         changeOrigin: true,
         pathRewrite: {
-          '^/todayQuiz': ''
+          "^/todayQuiz": ""
         }
       },
-      '/lastBread': {
-        target: 'http://15.164.93.96:5000/lastBread',
+      "/lastBread": {
+        target: "http://13.209.69.224:5000/lastBread",
         changeOrigin: true,
         pathRewrite: {
-          '^/lastBread': ''
+          "^/lastBread": ""
         }
       }
     }
   }
-}
+};

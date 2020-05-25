@@ -73,7 +73,6 @@ export default {
       axios
         .get("/lastBread")
         .then(res => {
-          console.log(res.data);
           vm.users = res.data;
         })
         .catch(err => {

@@ -322,7 +322,7 @@
                 $.ajax({ 
                     type: 'POST' , 
                     dataType: 'json',
-                    url: 'https://15.164.93.96:2020/skyti/searchWeb' , 
+                    url: 'https://skyAir.revoice.kr/web' , 
                     data : param,                    
                     success: function(data) { 
                         console.log(data)
@@ -330,9 +330,9 @@
                             $("#list").empty()
                             const sky = data.output.roundInfo
                             document.getElementById("searchResult").style = "display:block"
-                            for(let i=0; i<sky.price.length; i++){
-                                const skyout = sky.outItineraries[i]
-                                const skyin = sky.inItineraries[i]
+                            for(let i=0; i<sky.length; i++){
+                                const skyout = sky[i].outItineraries
+                                const skyin = sky[i].inItineraries
                                 $("#list").append(
                                 "<h4 class='media-heading'>추천 "+(i+1)+"번</h4>"+    
                                 "<table class='table table-hover table-bordered border-radius' style='table-layout:fixed; width:100%;'>"+
@@ -378,11 +378,11 @@
                                     "<tbody>"+
                                         "<tr>"+
                                             "<th class='bg-info'>가격</th>"+
-                                            "<td>"+sky.price[i]+"</td>"+
+                                            "<td>"+sky[i].price+"</td>"+
                                         "</tr>"+
                                     "</tbody>"+
                                 "</table>"+
-                                "<div style='display:inline; float:right;'><a style='margin:0' class='btn-primary btn-lg' href=https://www.skyscanner.co.kr/"+sky.url[i] +">선택</a></div>"
+                                "<div style='display:inline; float:right;'><a style='margin:0' class='btn-primary btn-lg' href=https://www.skyscanner.co.kr/"+sky[i].url +">선택</a></div>"
                                 )   
                             }
                         }

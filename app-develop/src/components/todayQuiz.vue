@@ -10,6 +10,7 @@
           <div class="dropdown-content">
             <a href="#/todayquiz">오늘의 퀴즈</a>
             <a href="#/lastbread">라스트 브레드</a>
+            <a href="#/skyair">스카이 에어</a>
           </div>
         </div>
         <h1>시즌1 랭킹</h1>
@@ -75,7 +76,6 @@ export default {
       axios
         .get("/todayQuiz")
         .then(res => {
-          console.log(res.data);
           vm.users = res.data;
         })
         .catch(err => {
